@@ -1,0 +1,176 @@
+.login{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    position: relative;
+}
+.login img{
+    margin-right: 3rem;
+}
+.login .formdata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 30%;
+
+}
+.login .formdata h2{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+.login .formdata form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.login .formdata form input{
+    width: 70%;
+    padding: 0.8rem 2rem;
+    border: none;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 7px;
+    outline: none;
+}
+.login .formdata form input:nth-child(1){
+    margin-bottom: 2rem;
+}
+.login .formdata form input:nth-child(2){
+    margin-bottom: 4rem;
+}
+.login .formdata form input:nth-child(3){
+    border: none;
+    background-color: #2d6cdf;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+.login .formdata form h3{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.login .formdata form button{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1.6rem;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-bottom: 7rem;
+}
+.login .formdata form button img{
+    width: 25px;
+    height: 25px;
+}
+#hide{
+ display: none;   
+ transition: 1s all;
+}
+.loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader div{
+    width: 6rem;
+    height: 6rem;
+    border: 5px solid #3742fa;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation:rotate 1s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#hideit{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .login img{
+        width: 36%;
+        margin: 0;
+        
+    }
+    .login .formdata{
+        width: 50%;
+    
+    }
+}
+@media screen and (max-width:468px) {
+    .login{
+        flex-direction: column;
+    }  
+    .login img{
+       width: 95%;
+    }
+    .login .formdata{
+        width: 100%;
+    
+    }
+    .login .formdata h2{
+        font-size: 3.5rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    .login .formdata form input{
+        width: 75%;
+        padding: 1.56rem 2rem;
+        border: none;
+        border: 2px solid rgba(0,0,0,0.3);
+        border-radius: 7px;
+        outline: none;
+    }
+    .login .formdata form button{
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+        box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+        background-color: white;
+        border-radius: 5px;
+        font-weight: bold;
+    padding: 0.6rem 1.2rem;
+        font-family: sans-serif;
+        font-size: 1.4rem;
+        cursor: pointer;
+        margin-bottom: 6rem;
+    }
+
+
+
+}

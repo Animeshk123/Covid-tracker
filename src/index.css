@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width:768px){
+    html{
+        font-size: 60%;
+    }
+}
+@media screen and (max-width:468px) {
+    html{
+        font-size: 55%;
+    }
+}

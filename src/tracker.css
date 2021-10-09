@@ -1,0 +1,270 @@
+#hide{
+    display: none;
+}
+.tracker{
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    position: relative;
+}
+.tracker h1{
+    text-align: center;
+    margin: 0.4rem 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.tracker .search{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.tracker .search input{
+    margin: 0 22rem;
+    border: none;
+    outline: none;
+    padding: 1.2rem 5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.sugg{
+    width: 250px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    top: 56px;
+    right: 22rem;
+    border-radius: 5px;
+}
+.sugg ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.sugg ul li{
+    list-style: none;
+    display: block;
+    margin: 0.6rem auto;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.sugg ul li:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.tracker .search img{
+    position: absolute;
+    right:23rem;
+    cursor: pointer;
+
+}
+.tracker .data{
+    width: 100%;
+    height: 250px;
+}
+.tracker .data,.whole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tracker .data div,.whole div{
+    width: 270px;
+    height: 90%;
+    margin: 0 3rem;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.tracker .data div:nth-child(1),.whole div:nth-child(1){
+    background-color: #3498db;
+    color: white;
+}
+.tracker .data div:nth-child(2),.whole div:nth-child(2){
+    background-color:#d63031;
+    color: white;
+}
+.tracker .data div:nth-child(3),.whole div:nth-child(3){
+    background-color:#ffa502;
+    color: white;
+}
+.tracker .data div h4,.whole div h4{
+      font-size: 3rem;
+      margin: 0.2rem 0;
+}
+.tracker .data div h5,.whole div h5{
+    font-size: 3.5rem;
+    margin: 0.2rem 0;
+}
+.tracker .whole{
+    width: 100%;
+    height: 250px;
+}
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader div{
+      width: 6rem;
+      height: 6rem;
+      border: 5px solid #3742fa;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation:rotate 1s linear infinite;
+  }
+  @keyframes rotate {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+  #hideit{
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+  }
+  @media screen and (max-width:768px) {
+    .tracker .search input{
+        margin: 0 3rem;
+        margin-top: 1.5rem;
+        padding: 1.6rem 8rem;
+    }
+    .tracker .search img{
+        right: 3.3rem;
+        top: 2.5rem;
+    }
+    .tracker .data div,.whole div{
+        width: 220px;
+        height: 70%;
+        margin: 0 2rem;
+        box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+    .tracker .data div h4,.whole div h4{
+        font-size: 2.6rem;
+  }
+  .tracker .data div h5,.whole div h5{
+    font-size: 3.2rem;
+    
+}
+.sugg{
+    width: 250px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    top: 56px;
+    right: 6rem;
+    border-radius: 5px;
+}
+  }
+
+  @media screen and (max-width:468px){
+    .tracker .search input{
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+    .tracker .search img{
+        right: 12.3rem;
+        top: 2.7rem;
+    }
+    .tracker .data,.whole{
+        flex-direction: column;
+        height: auto;
+    }
+    .tracker .whole{
+        width: 100%;
+        height: auto!important;
+    }
+    .tracker .data div,.whole div{
+        width: 80%;
+        height: 220px;
+        margin: 2rem 0.6rem;
+        box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+    .tracker .data div h4,.whole div h4{
+        font-size: 3.5rem;
+  }
+  .tracker .data div h5,.whole div h5{
+    font-size: 3.2rem;
+    
+}
+.sugg{
+    width: 250px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    top: 56px;
+    right: 8rem;
+    border-radius: 5px;
+}
+  }
+
+@media screen and (max-width:450px) {
+    .tracker .search img{
+        right: 8.3rem;
+        top: 2.7rem;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .tracker .search img{
+        right: 10.3rem;
+        top: 2.7rem;
+    }
+}
+@media screen and (max-width:425px) {
+    .tracker .search img{
+        right: 9.3rem;
+        top: 2.7rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .tracker .search img{
+        right: 7.3rem;
+        top: 2.7rem;
+    }
+}
+@media screen and (max-width:370px) {
+    .tracker .search img{
+        right: 5.3rem;
+        top: 2.7rem;
+    }
+}
